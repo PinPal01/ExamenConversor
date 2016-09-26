@@ -30,8 +30,8 @@ public class Conversor extends JFrame{
 	Conversor()
 	{
 		super();
-		setSize(800, 1100);
-		setTitle("Conversor");
+		setSize(600, 800);
+		setTitle("Pesos a Dolars");
 		
                 
                 
@@ -60,7 +60,7 @@ public class Conversor extends JFrame{
 		panel.add("Center", panelNumeros);
 
 		panelOperaciones = new JPanel();
-		panelOperaciones.setLayout(new GridLayout(2, 1));
+		panelOperaciones.setLayout(new GridLayout(4, 1));
 		panelOperaciones.setBorder(new EmptyBorder(4, 4, 4, 4));
 
 		nuevoBotonOperacion("CE");
@@ -142,7 +142,7 @@ public class Conversor extends JFrame{
 
 	private void calcularResultado() {
 		
-		resultado= (new Double(pantalla.getText()))/19;
+		resultado= (new Double(pantalla.getText()))/20;
 	
 		
 
